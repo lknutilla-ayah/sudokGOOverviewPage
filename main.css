@@ -1,3 +1,7 @@
 header {
     padding-top: 16px;
 }
+
+.carousel-caption {
+    background-color: black;
+}
