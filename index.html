@@ -6,6 +6,16 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   </head>
   <body>
+  <div class="container">
+    <div class="container">
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">EECS 493 Final Project Webpage: SudokGO</a>
+            </div>
+          </div>
+        </nav> 
+    </div>
     <div class="container">
         <div class="row">
             <div class="panel panel-default">
@@ -22,36 +32,39 @@
             </div>
         </div>
         <div class="row">
-            <h2>SudokGO Overview and Rules</h2>
-            <p>SudokGO is a Sudoku web app with single player and multiplayer(Battle Mode) functionality. The objective of a Sudoku game is to fill a 9x9 grid with digits 1 to 9 so that each column, row, and each of the nine 3x3 sub-grids contain all of the digits from 1 to 9. Therefore, there cannot be any repeat digits in a column, row or sub-grid.</p>
+            <div class="col-xs-12">
+                <h2>SudokGO Overview and Rules</h2>
+                <p>SudokGO is a Sudoku web app with single player and multiplayer(Battle Mode) functionality. The objective of a Sudoku game is to fill a 9x9 grid with digits 1 to 9 so that each column, row, and each of the nine 3x3 sub-grids contain all of the digits from 1 to 9. Therefore, there cannot be any repeat digits in a column, row or sub-grid.</p>
+            </div>
         </div>
         <div class="row">
-            <div class="col-xs-4">
+            <div class="col-xs-12">
                 <h4>Single Player</h4>
-                <p>Our application first provides a user with the options of playing an easy, medium, or hard single player Sudoku game.  Once the user chooses the difficulty, the Sudoku board will be filled and the timer will start.  The goal for the user is to finish the Sudoku puzzle as fast as possible.  While playing the game, a user can undo/redo a move.  A user also can pause the game, which stops the timer and makes the board disappear so that the player is not given an unfair advantage when the timer is stopped.  We also allow the user to switch between numbers and marks while filling in the board.  The marks are smaller numbers that can be used as notes if the user is unsure of a few numbers that could be placed in one box.</p>
+                <p>Our application first provides a user with the options of playing an easy, medium, or hard single player Sudoku game.  Once the user chooses the difficulty, the Sudoku board will be filled and the timer will start.  The goal for the user is to finish the Sudoku puzzle as fast as possible. A user also can pause the game, which stops the timer and makes the board disappear so that the player is not given an unfair advantage when the timer is stopped.</p>
                 <div class="row">
                     <div class="col-xs-6">
-                        <h4>Board Entry</h4>
-                        <p>Our application first provides a user with the options of playing an easy, medium, or hard single player Sudoku game.  Once the user chooses the difficulty, the Sudoku board will be filled and the timer will start.  The goal for the user is to finish the Sudoku puzzle as fast as possible.  While playing the game, a user can undo/redo a move.  A user also can pause the game, which stops the timer and makes the board disappear so that the player is not given an unfair advantage when the timer is stopped.  We also allow the user to switch between numbers and marks while filling in the board.  The marks are smaller numbers that can be used as notes if the user is unsure of a few numbers that could be placed in one box.</p>
+                        <h5>Board Entry</h5>
+                        <p>During play, the user can switch between two entry modes, "number" and "mark". "Number" entries get checked against the board for conflicts, and only one can be entered per box. On the other hand, "marks are not validated and multiple "marks" can be entered for a single box and are used as notes if the user is unsure about an entry and wants to remember potential numbers. Finally, a user can undo/redo numbers or marks from a box. </p>
                     </div>
                     <div class="col-xs-6">
+                        <h5>Board Navegation</h5>
+                        <p>To assist play, SudokGo allows a user multiple ways navigate the board. In general, the user can use the mouse to click any box, editable or non-editable, and the box is highlighted. Once the user has clicked into the board, he or she also can use the arrow keys to quickly move through the board. SudokGO also works cross platform and entries can be logged by keyboard or using the numpad to enter and delete numbers and marks</p>
                     </div>
                 </div>
             </div>
-            <div class="col-xs-4">
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
                 <h4>Multiplayer (Battle Mode)</h4>
-                <p>SudokGO is a Sudoku web app with single player and multiplayer functionality. The objective of a Sudoku game is to fill a 9x9 grid with digits 1 to 9 so that each column, row, and each of the nine 3x3 sub-grids contain all of the digits from 1 to 9. Therefore, there cannot be any repeat digits in a column, row or sub-grid.</p>
+                <p>SudokGO also includes a battle mode, which is a multiplayer version of Sudoku.  If the user plays in battle mode, they will be given a link to send to his or her friend.  Once the friend has joined the game, our application asks them if they are ready.  Once both players are ready, the multiplayer game starts and the goal is to finish the same Sudoku puzzle faster than the opponent.  If a player puts the correct number in a box, then the corresponding box on the other player's board is highlighted in yellow.  As competitors see the board fill up with yellow, the intensity increases and the race is on to see who can finish first.</p>
             </div>
-            <div class="col-xs-4">
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
                 <h4>Leaderboard</h4>
                 <p>Once a single player user completes a game, the user can enter their name, which will be put on a leaderboard if their time is one of the top ten times.</p>
             </div>
         </div>
-        
-        
-        We also allow battle mode in our application, which is a multiplayer version of Sudoku.  If the user plays in battle mode, they will be given a link to send to their friends.  Once their friend has joined the game by going to the link, our application asks them if they are ready.  Once both players are ready, the multiplayer game starts where the goal is to finish the same Sudoku puzzle faster than their opponent.  If a player puts the correct number in a box, then the other player will know as the box on their screen will be highlighted in yellow.  This increases the intensity of the game for players because they know how far along their opponent is.
-
-
     </div>
   </body>
 </html>
